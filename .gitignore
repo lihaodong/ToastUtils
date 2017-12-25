@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.gradle/
+.idea/
+ToastUtils.iml
+app/app.iml
+build/
+toastlibrary/toastlibrary.iml

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="htoast_success">#5BB75B</color>
+    <color name="htoast_error">#D8524E</color>
+    <color name="htoast_warning">#FB9B4D</color>
+    <color name="htoast_normal">#444344</color>
+    <color name="htoast_info">#444344</color>
+</resources>
