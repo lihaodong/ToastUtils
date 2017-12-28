@@ -83,13 +83,16 @@ public class HToast {
         this.successIcon=builder.successIcon;
         if(successIcon==null)
             successIcon= R.drawable.htoast_success;
-        if(isShowIcon!=null){
+        if(builder.isShowIcon!=null){
             this.isShowIcon=builder.isShowIcon;
         }else{
             this.isShowIcon=true;
         }
-
-        this.duration=builder.duration;
+        if(builder.duration!=null){
+            this.duration=builder.duration;
+        }else{
+            this.duration=Toast.LENGTH_SHORT;
+        }
 
     }
     public static Builder newBuilder(Context context) {
@@ -107,7 +110,7 @@ public class HToast {
         private Integer infoIcon;
         private Integer successIcon;
         private Boolean isShowIcon;
-        private int duration;
+        private Integer duration;
         public Builder(Context context) {
             this.mContext = context.getApplicationContext();
         }
@@ -299,7 +302,7 @@ public class HToast {
      * @param duration  显示时长
      * @return
      */
-    public static Toast custom(@NonNull String message, Drawable icon,
+    private static Toast custom(@NonNull String message, Drawable icon,
                                int textColor, int tintColor, int duration) {
         View toastLayout = LayoutInflater.from(HToast.mContext).inflate(R.layout.htoast_view, null);
         ImageView toastIcon = (ImageView) toastLayout.findViewById(R.id.htoast_icon);

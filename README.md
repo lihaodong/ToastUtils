@@ -5,7 +5,7 @@
 ----
 
 ## 截图
-完善成功后上传
+![](https://github.com/lihaodong/ToastUtils/blob/master/images/image.gif)
 ## 使用方法
 ### Gradle
 ```groovy
@@ -29,7 +29,26 @@ compile 'com.lihaodong.toast:toastlibrary:1.0.1'
 方法里面。还有别忘了在manifest.xml中注册Application。
 ```
 HToast.newBuilder(this)
+      ...
       .build();
+```
+## 关于HToast的说明
+`HToast默认提供htoast提供的颜色，可在Application里面统一配置全局设置`
+```java
+setTextColor(R.color.white)// 设置提示字体颜色
+setSuccessBgColor(R.color.htoast_success)// 设置提示成功的背景颜色
+setErrorIcon(R.color.htoast_error)//设置提示失败的背景颜色
+setWarningBgColor(R.color.htoast_warning)//设置提示警告背景颜色
+setInfoBgColor(R.color.htoast_info)//设置提示信息背景颜色
+
+setWarningIcon(R.drawable.htoast_warning)//设置提示警告图标
+setErrorIcon(R.drawable.htoast_error)//设置提示失败图标
+setSuccessIcon(R.drawable.htoast_success)//设置提示成功图标
+setInfoIcon(R.drawable.htoast_info)//设置提示信息图标
+
+setShowIcon(false)//设置提示图标是否显示
+
+setDuration(1000)//设置提示延迟时间
 ```
 ## 调用
 

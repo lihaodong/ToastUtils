@@ -13,13 +13,6 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         HToast.newBuilder(this)
-//                .setTextColor(R.color.white)
-//                .setErrorBgColor(R.color.htoast_error)
-//                .setSuccessBgColor(R.color.htoast_success)
-//                .setErrorIcon(R.drawable.htoast_error)
-//                .setSuccessIcon(R.drawable.htoast_success)
-//                .setShowIcon(false)
-//                .setDuration(1000)
                 .build();
     }
 }
