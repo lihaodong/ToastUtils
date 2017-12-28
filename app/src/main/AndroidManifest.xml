@@ -1,7 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.lihaodong.toast.sample">
-
     <application
         android:name=".App"
         android:allowBackup="true"

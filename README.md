@@ -9,14 +9,14 @@
 ## 使用方法
 ### Gradle
 ```groovy
-compile 'com.lihaodong.toast:toastlibrary:1.0'
+compile 'com.lihaodong.toast:toastlibrary:1.0.1'
 ```
 ### Maven
 ```groovy
 <dependency>
   <groupId>com.lihaodong.toast</groupId>
   <artifactId>toastlibrary</artifactId>
-  <version>1.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```

@@ -5,7 +5,7 @@ ext {
     ]
 
     bintray = [
-            version       : "1.0", // 项目本地发布的版本号
+            version       : "1.0.1", // 项目本地发布的版本号
             group         : "com.lihaodong.toast", // 项目的group名，第一次定好以后不能改
 
             siteUrl       : 'https://github.com/lihaodong/ToastUtils.git', // 项目开源地址
